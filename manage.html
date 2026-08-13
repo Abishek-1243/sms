@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manage Students | SMS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell">
+
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <a href="index.html" class="brand">SMS</a>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html">🏠 Home</a>
+      <a href="dashboard.html">📊 Dashboard</a>
+      <a href="add.html">➕ Add Student</a>
+      <a href="manage.html" class="active">🗂️ Manage Students</a>
+    </nav>
+    <div class="sidebar-foot">BSc CSIT</div>
+  </aside>
+
+  <div class="main-wrap">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Student Directory</p>
+        <h1>Manage Students</h1>
+        <p>Search, filter and manage all registered students.</p>
+      </div>
+      <a href="add.html" class="primary-btn">+ Add Student</a>
+    </header>
+
+    <main>
+      <div class="student-summary">Total Students <strong id="manageStudentCount">0</strong></div>
+
+      <section class="filter-box">
+        <div><label for="searchStudent">Search</label><input type="search" id="searchStudent" placeholder="Name, email, contact..."></div>
+        <div>
+          <label for="facultyFilter">Faculty</label>
+          <select id="facultyFilter">
+            <option value="">All Faculties</option>
+            <option>BSc CSIT</option><option>BIT</option><option>B.TECH</option>
+            <option>BBA</option><option>BBS</option><option>BA</option><option>BFA</option>
+          </select>
+        </div>
+        <div>
+          <label for="semesterFilter">Semester</label>
+          <select id="semesterFilter">
+            <option value="">All Semesters</option>
+            <option value="1">First</option><option value="2">Second</option><option value="3">Third</option>
+            <option value="4">Fourth</option><option value="5">Fifth</option><option value="6">Sixth</option>
+          </select>
+        </div>
+        <button id="clearFilters" class="clear-btn" type="button">Clear</button>
+      </section>
+
+      <section id="studentGrid" class="card-grid"></section>
+    </main>
+  </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

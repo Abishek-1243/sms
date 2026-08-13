@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Details | SMS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell">
+
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <a href="index.html" class="brand">SMS</a>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html">🏠 Home</a>
+      <a href="dashboard.html">📊 Dashboard</a>
+      <a href="add.html">➕ Add Student</a>
+      <a href="manage.html">🗂️ Manage Students</a>
+    </nav>
+    <div class="sidebar-foot">BSc CSIT</div>
+  </aside>
+
+  <div class="main-wrap">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Student Record</p>
+        <h1>Student Details</h1>
+      </div>
+      <a href="manage.html" class="back-btn">← Back to Students</a>
+    </header>
+
+    <main>
+      <div class="details-card">
+        <div class="flex"><label>Name</label><p id="stName">-</p></div>
+        <div class="flex"><label>Email</label><p id="stEmail">-</p></div>
+        <div class="flex"><label>Contact</label><p id="stContact">-</p></div>
+        <div class="flex"><label>Address</label><p id="stAddress">-</p></div>
+        <div class="flex"><label>Faculty</label><p id="stFaculty">-</p></div>
+        <div class="flex"><label>Semester</label><p id="stSemester">-</p></div>
+      </div>
+    </main>
+  </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

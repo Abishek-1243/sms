@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard | SMS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell">
+
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <a href="index.html" class="brand">SMS</a>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html">🏠 Home</a>
+      <a href="dashboard.html" class="active">📊 Dashboard</a>
+      <a href="add.html">➕ Add Student</a>
+      <a href="manage.html">🗂️ Manage Students</a>
+    </nav>
+    <div class="sidebar-foot">BSc CSIT</div>
+  </aside>
+
+  <div class="main-wrap">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Overview</p>
+        <h1>Welcome back</h1>
+        <p>Here's what's happening with your students today.</p>
+      </div>
+      <a href="add.html" class="primary-btn">+ Add Student</a>
+    </header>
+
+    <main>
+      <section class="stats">
+        <div class="stat-card"><span class="stat-icon">🎓</span><p>Total Students</p><h2 id="totalStudents">0</h2></div>
+        <div class="stat-card"><span class="stat-icon">💻</span><p>Computer Programs</p><h2 id="computerStudents">0</h2></div>
+        <div class="stat-card"><span class="stat-icon">📊</span><p>Management</p><h2 id="managementStudents">0</h2></div>
+        <div class="stat-card"><span class="stat-icon">🎨</span><p>Arts</p><h2 id="artsStudents">0</h2></div>
+      </section>
+
+      <section>
+        <div class="section-heading">
+          <div><h2>Recent Students</h2><p style="color:var(--muted)">Recently registered students</p></div>
+          <a href="manage.html">View all →</a>
+        </div>
+        <div id="recentStudents" class="recent-list"></div>
+      </section>
+    </main>
+  </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
